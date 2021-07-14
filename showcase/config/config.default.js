@@ -15,7 +15,7 @@ module.exports = appInfo => {
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1625040559227_5953';
 
-  // add your middleware config here
+  // 中间件的文件名
   config.middleware = ['testMiddleware'];
   //指定某些路径不过滤,可以用数组展示
   config.testMiddleware = {
