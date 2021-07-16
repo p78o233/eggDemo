@@ -37,4 +37,7 @@ module.exports = app => {
     app.router.post('/api/test/currencyDelete/:tableName', app.controller.test.testController.currencyDelete);
     // 动态sql
     app.router.get('/api/test/dynamicSql', app.controller.test.testController.dynamicSql);
+
+    const { io } = app;
+    io.of('/').route('socket', io.controller.SocketController);
 };
