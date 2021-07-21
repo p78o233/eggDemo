@@ -26,7 +26,7 @@ module.exports = appInfo => {
     // myAppName: 'egg',
   };
 
-  //egg 框架内置了安全系统，默认开启防止 XSS 攻击 和 CSRF 攻击，此处关闭（生产环境不推荐）
+  //egg 框架内置了安全系统，默认开启防止 XSS 攻击 和 CSRF 攻击，此处关闭（生产环境不推荐） npm i egg-cors --save
   // config.security = {
   //   csrf: false
   // };
@@ -45,7 +45,7 @@ module.exports = appInfo => {
   exports.multipart = {
     mode: 'file',
   };
-  // 数据库配置
+  // 数据库配置  npm i egg-mysql --save
   exports.mysql = {
     // 单数据库信息配置
     client: {
