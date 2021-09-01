@@ -57,7 +57,7 @@ class TestController extends Controller {
     // 获取头部参数
     async getHeaderParams(){
         const {ctx} = this;
-        //  ctx.headers这种方式是会获取整个header对象，要获取其中某个值如下
+        //  ctx.headers这种方式是会获取整个header对象，要获取其中某个值如下  header字段名会全部转成小写
         let header1 = ctx.headers["token"];
         //ctx.get(name)这种方式是指获取一个值
         let header2 = ctx.get("token")
